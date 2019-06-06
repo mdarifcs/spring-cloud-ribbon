@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ribbon-load-balance-app
+server:
+  port: 7070
+
+chat:
+  ribbon:
+    eureka:
+      enabled: false;
+    listOfServers: localhost:7071,localhost:7072,localhost:7073
+    ServerListRefreshInterval: 2000
